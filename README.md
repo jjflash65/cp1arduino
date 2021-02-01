@@ -16,3 +16,10 @@ aber erst einmal die Boarddefinitionen.
 Im Ordner ./Arduino/bootloaders sind die Bootloader fuer einen Betrieb mit 38400 Bd 
 und internem Taktgenerator fuer 8 MHz enthalten.
 
+Einfaches Einbinden des CP1+ Boards in der Arduino Umgebung:
+
+Datei -> Voreinstellungen -> zusaetzliche Boardverwalter_URL's
+
+https://github.com/jjflash65/cp1arduino/raw/master/package_cp1_index.json
+
+
