@@ -1,7 +1,7 @@
 {
     "name": "Arduino for CP1+",
     "description": "Boards definition and libraries for CP1+ board",
-    "url": "https://github.com/jjflash65/Arduino",
+    "url": "https://github.com/jjflash65/cp1arduino/Arduino",
     "version": "1.0.1"
 }
 
