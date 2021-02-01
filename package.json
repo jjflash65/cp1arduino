@@ -1,7 +1,46 @@
 {
-    "name": "Arduino for CP1+",
-    "description": "Boards definition and libraries for CP1+ board",
-    "url": "https://github.com/jjflash65/cp1arduino/Arduino",
-    "version": "1.0.1"
+    "packages": [
+        {
+            "name": "CP1+",
+            "maintainer": "JJFlash",
+            "websiteURL": "http://github/jjflash65/",
+            "email": "",
+            "help": {
+                "online": ""
+            },
+            "platforms": [
+                {
+                    "name": "CP1+ Board",
+                    "architecture": "avr",
+                    "version": "1.0.1",
+                    "category": "Contributed",
+                    "url": "https://github.com/jjflash65/cp1arduino/package.zip",
+                    "archiveFileName": "package_cp1+.zip",
+                    "checksum": "SHA-256:1b2f22d817e8cb0e31646b804662dd91c393f2b8eeeb09b80e9566032ad8571b",
+                    "size": "127493",
+                    "help": {
+                        "online": ""
+                    },
+                    "boards": [
+                        {
+                            "name": "CP1+ with ATMegaxx8"
+                        }
+                    ],
+                    "toolsDependencies": [
+                    {
+                      "packager": "arduino",
+                      "name": "avr-gcc",
+                      "version": "4.9.2-atmel3.5.3-arduino2"
+                    },
+                    {
+                      "packager": "arduino",
+                      "name": "avrdude",
+                      "version": "6.3.0-arduino6"
+                    }
+                            ]
+                        }
+                    ],
+            "tools": []
+        }
+    ]
 }
-
