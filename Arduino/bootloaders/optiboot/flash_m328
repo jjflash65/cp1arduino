@@ -1,0 +1,12 @@
+#!/bin/bash
+echo -------------------------------------------
+echo    Flashen eines seriellen Bootloaders
+echo    fuer einen ATmega8 mit 38400 Baud und
+echo    internem 8 MHz Takt
+echo
+echo    03.01.2021 R. Seelig
+echo  -------------------------------------------
+
+
+avrdude -c usbasp -p m328p -B 10 -U lfuse:w:0xe2:m -U hfuse:w:0xda:m -U efuse:w:0xff:m
+avrdude -c usbasp -p m328p -B 3 -U flash:w:boot_atmega328_8mhz_38400bd.hex
