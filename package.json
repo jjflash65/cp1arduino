@@ -14,7 +14,7 @@
                     "architecture": "avr",
                     "version": "1.0.1",
                     "category": "Contributed",
-                    "url": "https://github.com/jjflash65/cp1arduino/package_cp1+.zip",
+                    "url": "https://raw.githubusercontent.com/jjflash65/cp1arduino/master/package_cp1+.zip",
                     "archiveFileName": "package_cp1+.zip",
                     "checksum": "SHA-256:1b2f22d817e8cb0e31646b804662dd91c393f2b8eeeb09b80e9566032ad8571b",
                     "size": "127493",
