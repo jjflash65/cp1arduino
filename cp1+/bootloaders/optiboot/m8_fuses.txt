@@ -1,0 +1,5 @@
+Fuses fuer einen ATmega8 mit geflashtem Bootloader
+OHNE Quarz, internem 8MHz Takt, Baudrate 38400
+
+LO: 0xD4
+HI: 0xCA
