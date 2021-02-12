@@ -1,6 +1,0 @@
-Fuses fuer einen ATmega328p mit geflashtem Bootloader
-OHNE Quarz, internem 8MHz Takt, Baudrate 38400
-
-LO : 0xE2
-HI : 0xDA
-EXT: 0xFF
