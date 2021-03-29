@@ -12,11 +12,11 @@
                 {
                     "name": "CP1+ Board",
                     "architecture": "avr",
-                    "version": "1.0.3",
+                    "version": "1.0.5",
                     "category": "Contributed",
                     "url": "https://github.com/jjflash65/cp1arduino/raw/master/package_cp1+.zip",                    
                     "archiveFileName": "package_cp1+.zip",
-                    "checksum": "SHA-256:1653b414f06c122ffb0053f1ed41244e3166f9b5f09ff9d629bca0b1b81add07",
+                    "checksum": "SHA-256:0b99ef2b5f4756aa6270011eb212b28d56d341c1538a6a662ba944f3557e8c10",
                     "size": "182906",
                     "help": {
                         "online": ""
