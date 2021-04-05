@@ -19,12 +19,12 @@
    Anschluesse fuer RST, CE, DC sind frei waehlbar beim Erstellen des
    Objects in der Reihenfolge.
    
-   rst= 8   = PB0
-   dc=  9   = PB1
-   ce=  10  = PB2
+   rst= 8   = PB0  = P1_2  (CP1+)
+   dc=  9   = PB1  = P1_3  (CP1+)
+   ce=  10  = PB2  = P1_4  (CP1+)
 */
 
-st7735 lcd(8, 9, 10);         // Displayobjekt erzeugen
+st7735 lcd(P1_2, P1_3, P1_4);  // Displayobjekt erzeugen
 
 
 int t_lastx, t_lasty;       // x,y - Positionen der letzten Zeichenaktion von moveto

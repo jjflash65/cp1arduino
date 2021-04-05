@@ -13,11 +13,15 @@
      Der Uebersichtlichkeitshalber angepasst an die
      Pinnamen des CP1+ Boards.
 
-     Baudrate: 38400 Bd
+     Baudrate: 19200 Bd
 
      Verwendung mit Avrdude (Beispiel):
      
-     avrdude -c avrisp -p attiny44 -P /dev/ttyUSB0 -b 38400 -V -U flash:w:demo.hex
+     avrdude -c avrisp -p attiny44 -P /dev/ttyUSB0 -b 19200 -V -U flash:w:demo.hex
+     
+     Hinweis: ein Erhoehen der Baudrate ist bis 38400 moeglich, jedoch
+     kann der AVR-ISP dann nicht in Verbindung mit Arduino verwendet
+     werden, da Arduino die Baudrate beim Flashen fest auf 19200 eingestellt hat
 
      Board : CP1+
      F_CPU : 8 MHz intern
@@ -32,9 +36,9 @@
 //      Anschlusspins des ISP-Interface
 // ------------------------------------------
 
-#define PIN_MOSI      MOSI      // P2_5
-#define PIN_MISO      MISO      // P2_4
-#define PIN_SCK       SCK       // P2_3
+#define PIN_MOSI      MOSI      // P1_5
+#define PIN_MISO      MISO      // P1_6
+#define PIN_SCK       SCK       // P1_7
 #define RESET         P1_4      
 
 #define LED_HB        P2_0
@@ -48,7 +52,7 @@
 
 #define SERIAL Serial
 
-#define BAUDRATE	    38400
+#define BAUDRATE	    19200
 
 #define HWVER 2
 #define SWMAJ 1

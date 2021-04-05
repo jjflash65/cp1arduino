@@ -6,9 +6,14 @@
      01.03.2021    R. Seelig
    --------------------------------------------------------------------------- */
 
-#include "Arduino.h"
 #include <avr/io.h>
 #include <util/delay.h>
+
+#include "Arduino.h"
+#include "cp1_i2c.h"
+
+// Software - I2C : i2c(sda, scl)
+extern swi2c i2c;
 
 class rda5807
 {
@@ -42,7 +47,7 @@ class rda5807
                 0x4000 };                   // 06 OPENMODE=01
 
 
-    rda5807(uint8_t da, uint8_t cl);
+    rda5807();
     void writereg(uint8_t ind);
     void write(void);
     void reset(void);
@@ -59,16 +64,5 @@ class rda5807
 
   private:
     uint8_t sda, scl;
-
-    void i2c_delay(uint16_t anz);
-    void i2c_sendstart(void);
-    uint8_t i2c_start(uint8_t addr);
-    void i2c_stop();
-    void i2c_write_nack(uint8_t data);
-    uint8_t i2c_write(uint8_t data);
-    uint8_t i2c_write16(uint16_t data);
-    uint8_t i2c_read(uint8_t ack);
-    uint8_t i2c_read_ack();
-    uint8_t i2c_read_nack();  
    
 };

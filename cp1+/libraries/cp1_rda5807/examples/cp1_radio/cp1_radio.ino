@@ -18,10 +18,13 @@
 //    Shift-Taste = D5
   tm1637  tm16(A5, A4, 5);
 
-// I2C Anschluss
+// I2C Bus-Pins
 //    SDA = P2_1
 //    SCL = P2_0
-  rda5807 ukw(P2_1, P2_0);
+  swi2c i2c(P2_1, P2_0);
+  
+// ukw - Objekt (benoetigt I2C-Bus)  
+  rda5807 ukw;
 
 /*  ---------------------------------------------------------
                                setup
