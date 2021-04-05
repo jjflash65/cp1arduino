@@ -12,7 +12,6 @@
 #include <avr/interrupt.h>
   
 #include "Arduino.h"   
-#include "my_printf.h"   
 #include "cp1_i2c.h"
 
 // Software - I2C : i2c(sda, scl)
